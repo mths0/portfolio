@@ -163,7 +163,9 @@ textarea:focus {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .btn-primary:hover {
@@ -193,13 +195,18 @@ svg {
 main {
   width: min(65ch, 100% - 4rem);
   margin-inline: auto;
+  flex: 1;
+  width: min(65ch, 100% - 4rem);
 }
 
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 body {
+  display: flex;
+  flex-direction: column;
   /* pick ONE: either the flat color or gradient */
   /* background-color: #f7ede2; */
   background: radial-gradient(
@@ -257,7 +264,8 @@ body {
 
 .wave:nth-of-type(2) {
   opacity: 1;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+  animation:
+    wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
     swell 7s ease -1.25s infinite;
 }
 
