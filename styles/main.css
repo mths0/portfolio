@@ -20,7 +20,9 @@ body {
     #b7e8eb 100%
   );
 }
-
+.hide {
+  visibility: hidden;
+}
 /* =========================
    Header
 ========================= */
@@ -60,6 +62,19 @@ main {
   margin-top: 6rem;
 }
 
+#profile {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 50%;
+}
 .para {
   margin-top: 1rem;
 }
