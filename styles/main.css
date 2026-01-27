@@ -21,7 +21,6 @@ body {
   );
 }
 
-
 /* =========================
    Header
 ========================= */
@@ -43,10 +42,6 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  visibility: hidden;
-}
-
 a:hover {
   color: #00a0c6;
 }
@@ -55,7 +50,6 @@ a:hover {
    Main content
 ========================= */
 main {
-
   flex: 1;
   width: min(65ch, 100% - 4rem);
   margin-inline: auto;
@@ -92,15 +86,7 @@ main {
     #5ffbf1
   );
 }
-.center {
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  width: 50%;
-  
-}
+
 /* =========================
    Footer & waves
 ========================= */
@@ -108,7 +94,6 @@ main {
   position: relative;
   height: 250px;
   overflow: hidden;
-  padding-bottom: 10rem;
 }
 
 /* Social links */
@@ -141,9 +126,8 @@ main {
 
 /* Waves */
 .wave {
-  z-index: -200;
   position: absolute;
-  bottom: -50px;
+  bottom: -20px;
   width: 6400px;
   height: 198px;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg")
