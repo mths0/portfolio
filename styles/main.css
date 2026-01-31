@@ -5,6 +5,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +57,7 @@ main {
   width: min(65ch, 100% - 4rem);
   margin-inline: auto;
   text-align: center;
+  padding-bottom: 180px;
 }
 
 .center-post {
@@ -107,19 +109,19 @@ main {
 ========================= */
 .footer {
   position: relative;
-  margin-top: 100px;
-  height: 250px;
+  margin-top: 0;
+  height: 180px;
 }
 
 /* Social links */
 .footer-links {
   position: relative;
+  top: -100px;
   z-index: 2;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  transform: translateY(-80px);
-  margin-top: 2rem;
+  padding-bottom: 20px;
 }
 
 .footer-links a {
@@ -196,8 +198,16 @@ main {
     height: 160px;
     bottom: -10px;
   }
+  img.center {
+    max-height: 70vh;
+    object-fit: contain;
+  }
 
   .footer-links {
-    transform: translateY(-50px);
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
   }
 }
