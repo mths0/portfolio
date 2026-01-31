@@ -107,8 +107,8 @@ main {
 ========================= */
 .footer {
   position: relative;
+  margin-top: 100px;
   height: 250px;
-  overflow: hidden;
 }
 
 /* Social links */
@@ -118,6 +118,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  transform: translateY(-80px);
   margin-top: 2rem;
 }
 
@@ -181,9 +182,22 @@ main {
 /* =========================
    Responsive tweaks
 ========================= */
+
 @media (max-width: 800px) {
   .container-header {
     grid-template-columns: 1fr auto auto;
     padding: 1rem;
+  }
+  .footer {
+    height: 180px;
+  }
+
+  .wave {
+    height: 160px;
+    bottom: -10px;
+  }
+
+  .footer-links {
+    transform: translateY(-50px);
   }
 }
