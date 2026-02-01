@@ -19,9 +19,9 @@
     <header>
       <nav>
         <div class="container-header">
-          <h1 class="item-1">Portfolio</h1>
-          <p class="item-2 hide"><a href="/">Projects</a></p>
-          <p class="item-3 hide"><a href="/">Contact me</a></p>
+          <h1 class="item-1"><a href="/index.html">Portfolio</a></h1>
+          <p class="item-2"><a href="/cv.html">CV</a></p>
+          <p class="item-3"><a href="/contacMe.html">Contact me</a></p>
         </div>
       </nav>
     </header>
@@ -35,10 +35,95 @@
       </div>
       <section>
         <img src="./images/me.png" class="center" id="profile" />
-        <img src="./images/cv.jpg" class="center" />
       </section>
+      <section class="projects">
+        <h3 class="projects-title">Projects</h3>
 
-      <!-- STATIC POSTS -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h4>Talk To The World</h4>
+            <p>
+              TTTW is a simple blog platform built with Node.js + Express + EJS
+              that lets anyone share their thoughts with the world. Users can
+              create, update, and delete posts — all in a clean and modern UI.
+            </p>
+            <a
+              href="https://github.com/mths0/Talk-To-The-World"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project →
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h4>SkyCast</h4>
+            <p>
+              SkyCast is a simple weather app built with Node.js, Express, and
+              EJS that shows current weather by searching for a city. It uses
+              the OpenWeather API to fetch real-time data.
+            </p>
+            <a
+              href="https://github.com/mths0/SkyCast"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project →
+            </a>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h4>Quiz App (Flutter)</h4>
+            <p>Do you know Flutter? Quiz your knowledge</p>
+            <a
+              href="https://github.com/mths0/QuizApp"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project →
+            </a>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <h4>Portfolio Website</h4>
+            <p>
+              My personal portfolio showcasing projects, CV, and contact
+              information— yes, the very site you’re looking at
+            </p>
+            <a
+              href="https://mths.com"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              Live Site →
+            </a>
+          </article>
+          <!-- Project 5 -->
+          <article class="project-card">
+            <h4>ML Email Classifier</h4>
+            <p>
+              This project is a Machine Learning-based Email Classifier that
+              detects whether an email is Spam or Ham (Not Spam) using a
+              Multinomial Naïve Bayes model trained on labeled email dataset.
+            </p>
+            <a
+              href="https://github.com/mths0/ML-Email-Classifier"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project →
+            </a>
+          </article>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

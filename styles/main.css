@@ -103,6 +103,63 @@ main {
     #5ffbf1
   );
 }
+/* =========================
+   Projects section
+========================= */
+.projects {
+  margin-top: 5rem;
+}
+
+.projects-title {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Link */
+.project-link {
+  font-weight: 600;
+  color: #425c83;
+}
+
+.project-link:hover {
+  color: #00a0c6;
+}
 
 /* =========================
    Footer & waves
