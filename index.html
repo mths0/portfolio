@@ -16,12 +16,13 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
+    <header id="top">
+      <nav role="navigation">
         <div class="container-header">
           <h1 class="item-1"><a href="/index.html">Portfolio</a></h1>
+          <p class="item-2"><a href="/projects.html">Projects</a></p>
           <p class="item-2"><a href="/cv.html">CV</a></p>
-          <p class="item-3"><a href="/contactme.html">Contact me</a></p>
+          <p class="item-2"><a href="/contactme.html">Contact me</a></p>
         </div>
       </nav>
     </header>
@@ -34,96 +35,54 @@
         </h2>
       </div>
       <section>
-        <img src="./images/me.png" class="center" id="profile" />
+        <figure>
+          <img
+            src="./images/me.png"
+            class="center"
+            id="profile"
+            alt="photo of Mohannad"
+          />
+          <figcaption class="sr-only">Profile Photo</figcaption>
+        </figure>
       </section>
-      <section class="projects">
-        <h3 class="projects-title">Projects</h3>
 
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <h4>Talk To The World</h4>
-            <p>
-              TTTW is a simple blog platform built with Node.js + Express + EJS
-              that lets anyone share their thoughts with the world. Users can
-              create, update, and delete posts — all in a clean and modern UI.
-            </p>
-            <a
-              href="https://github.com/mths0/Talk-To-The-World"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
+    <section class="about">
+  <h1>Hi, I'm Mohannad</h1>
+  <h2>Backend-Focused Computer Science Student</h2>
+  <p>
+    I design and build backend systems with a focus on scalability,
+    clean architecture, and performance. I enjoy turning complex
+    problems into structured solutions.
+  </p>
+</section>
 
-          <!-- Project 2 -->
-          <article class="project-card">
-            <h4>SkyCast</h4>
-            <p>
-              SkyCast is a simple weather app built with Node.js, Express, and
-              EJS that shows current weather by searching for a city. It uses
-              the OpenWeather API to fetch real-time data.
-            </p>
-            <a
-              href="https://github.com/mths0/SkyCast"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-          <!-- Project 3 -->
-          <article class="project-card">
-            <h4>Quiz App (Flutter)</h4>
-            <p>Do you know Flutter? Quiz your knowledge</p>
-            <a
-              href="https://github.com/mths0/QuizApp"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
+<section class="details">
 
-          <!-- Project 4 -->
-          <article class="project-card">
-            <h4>Portfolio Website</h4>
-            <p>
-              My personal portfolio showcasing projects, CV, and contact
-              information— yes, the very site you’re looking at
-            </p>
-            <a
-              href="https://mths.com"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              Live Site →
-            </a>
-          </article>
-          <!-- Project 5 -->
-          <article class="project-card">
-            <h4>ML Email Classifier</h4>
-            <p>
-              This project is a Machine Learning-based Email Classifier that
-              detects whether an email is Spam or Ham (Not Spam) using a
-              Multinomial Naïve Bayes model trained on labeled email dataset.
-            </p>
-            <a
-              href="https://github.com/mths0/ML-Email-Classifier"
-              target="_blank"
-              rel="noopener"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-        </div>
-      </section>
+  <h2>What I Work On</h2>
+  <ul>
+    <li>RESTful API Development</li>
+    <li>Authentication & Database Design</li>
+    <li>Full-stack Web Applications</li>
+  </ul>
+
+  <h3>Current Focus</h3>
+  <ol>
+    <li>System Design & Architecture</li>
+    <li>Cloud & Deployment Concepts</li>
+    <li>Production-level Code Practices</li>
+  </ol>
+
+  <h3>Core Technologies</h3>
+  <dl>
+    <dt>Node.js</dt>
+    <dd>Server-side runtime for building scalable APIs</dd>
+
+    <dt>Firebase</dt>
+    <dd>Authentication, real-time database, and backend services</dd>
+  </dl>
+
+</section>
+      <p><a href="#top">Back to Top ↑</a></p>
     </main>
 
     <!-- FOOTER -->

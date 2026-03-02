@@ -16,12 +16,13 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
+    <header id="top">
+      <nav role="navigation">
         <div class="container-header">
           <h1 class="item-1"><a href="/index.html">Portfolio</a></h1>
+          <p class="item-2"><a href="/projects.html">Projects</a></p>
           <p class="item-2"><a href="/cv.html">CV</a></p>
-          <p class="item-3"><a href="/contactme.html">Contact me</a></p>
+          <p class="item-2"><a href="/contactme.html">Contact me</a></p>
         </div>
       </nav>
     </header>
@@ -34,10 +35,81 @@
         </h2>
       </div>
       <section>
-        <img src="./images/cv.jpg" class="center" />
+        <img src="./images/cv.jpg" class="center" style="margin-bottom: 2rem" />
       </section>
 
-      <!-- STATIC POSTS -->
+      <article class="cv">
+        <header class="cv-header">
+          <h2>Mohaned Alshahrani</h2>
+          <p><em>Computer Science Student</em></p>
+        </header>
+
+        <section>
+          <h3>Profile</h3>
+          <p>
+            Computer Science student focused on backend development and scalable
+            systems. Seeking summer or cooperative training opportunities.
+          </p>
+        </section>
+
+        <section>
+          <h3>Education</h3>
+          <div class="cv-item">
+            <strong>Bachelor of Computer Science</strong>
+            <span>King Saud University — Riyadh</span>
+            <span>01/2021 – 06/2026</span>
+          </div>
+        </section>
+
+        <section>
+          <h3>Projects</h3>
+
+          <div class="cv-item">
+            <strong>SkyCast Weather</strong>
+            <p>
+              Backend-driven weather web application using Node.js and Express.
+            </p>
+          </div>
+
+          <div class="cv-item">
+            <strong>TTTW Blog</strong>
+            <p>
+              Backend-focused CRUD blog application using Node.js and Express.
+            </p>
+          </div>
+
+          <div class="cv-item">
+            <strong>Restaurant Ordering Platform</strong>
+            <p>
+              Flutter application with Firebase backend and OTP authentication.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Skills</h3>
+          <p><strong>Programming:</strong> Java, JavaScript, Python, Dart</p>
+          <p>
+            <strong>Web & Mobile:</strong> Node.js, Express, Firebase, Flutter
+          </p>
+          <p><strong>Tools:</strong> Git, GitHub</p>
+        </section>
+
+        <section>
+          <h3>Languages</h3>
+          <p>Arabic</p>
+          <p>English</p>
+        </section>
+
+        <section>
+          <h3>Quote</h3>
+          <blockquote>
+            “Backend systems should be invisible when working — and
+            unforgettable when failing.”
+          </blockquote>
+        </section>
+      </article>
+      <p><a href="#top">Back to Top ↑</a></p>
     </main>
 
     <!-- FOOTER -->
