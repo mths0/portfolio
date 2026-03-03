@@ -1,6 +1,4 @@
-/* =========================
-   Global layout & reset
-========================= */
+/* Global layout & reset */
 html,
 body {
   height: 100%;
@@ -24,9 +22,7 @@ body {
 .hide {
   visibility: hidden;
 }
-/* =========================
-   Header
-========================= */
+/* Header  */
 .container-header {
   display: grid;
   grid-template-columns: 1fr auto auto auto;
@@ -49,9 +45,7 @@ a:hover {
   color: #00a0c6;
 }
 
-/* =========================
-   Main content
-========================= */
+/* Main content */
 main {
   flex: 1;
   width: min(65ch, 100% - 4rem);
@@ -81,9 +75,7 @@ main {
   margin-top: 1rem;
 }
 
-/* =========================
-   figures & images
-========================= */
+/* figures & images */
 .project-card figure {
   margin: 1rem 0;
 }
@@ -120,9 +112,7 @@ main {
     #5ffbf1
   );
 }
-/* =========================
-   Projects section
-========================= */
+/* Projects section */
 .projects {
   margin-top: 5rem;
 }
@@ -258,9 +248,7 @@ blockquote {
   color: #00a0c6;
 }
 
-/* =========================
-   Footer & waves
-========================= */
+/* Footer & waves */
 .footer {
   position: relative;
   margin-top: 0;
@@ -313,9 +301,7 @@ blockquote {
     swell 7s ease -1.25s infinite;
 }
 
-/* =========================
-   Animations
-========================= */
+/* Animations */
 @keyframes wave {
   from {
     margin-left: 0;
@@ -335,9 +321,7 @@ blockquote {
   }
 }
 
-/* =========================
-   Responsive tweaks
-========================= */
+/* Responsive tweaks */
 
 @media (max-width: 800px) {
   .container-header {
@@ -358,7 +342,6 @@ blockquote {
   }
 
   .footer-links {
-    position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
