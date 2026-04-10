@@ -151,8 +151,15 @@ main {
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
   color: #444;
+  font-family:
+    "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif, serif;
+  font-style: italic;
 }
 
+.project-card p a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .about {
   text-align: center;
   margin-bottom: 2rem;
@@ -175,7 +182,10 @@ main {
   margin-top: 0;
 }
 
-.details ul,
+.details ul {
+  list-style: armenian;
+  list-style-position: inside;
+}
 .details ol {
   list-style-position: inside;
   padding-left: 0;
@@ -222,6 +232,11 @@ main {
   display: block;
   color: #555;
   font-size: 0.95rem;
+}
+
+.cv section li {
+  list-style: armenian;
+  list-style-position: outside;
 }
 
 blockquote {
