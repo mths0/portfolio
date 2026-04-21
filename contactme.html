@@ -31,16 +31,17 @@
     <main>
       <h1>Contact Me</h1>
 
-      <p>
-        Email me directly:
-        <a href="mailto:mhnd9919@gmail.com">mhnd9919@gmail.com</a>
-      </p>
+      <form name="contact" class="contact-form" method="POST" onsubmit="return submitForm()">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
 
-      <div class="center-post">
-        <!-- <h2>
-          <strong><span class="fancy">Contact Me</span></strong>
-        </h2> -->
-      </div>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5"></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="center-post"></div>
 
       <section>
         <div class="footer-links" style="padding-top: 200px; margin-top: 300px">
@@ -77,5 +78,6 @@
         <div class="wave"></div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
