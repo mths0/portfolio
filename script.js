@@ -16,7 +16,7 @@ function submitForm() {
 
   // open("mailto:mhnd9919@gmail")
   alert("Thanks for the feedback");
-  return true;
+  return false;
 }
 
 function displayTimeOnload() {
