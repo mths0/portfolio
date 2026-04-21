@@ -103,6 +103,16 @@ main {
     #5ffbf1
   );
 }
+.intro {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.backend {
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.2rem;
+}
+
 /* =========================
    Projects section
 ========================= */
