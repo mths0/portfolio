@@ -1,3 +1,11 @@
+:root{
+ --primary-color: #dee2e6;
+ --primary-a-color: #00a0c6;
+ --primary-a-color-hover: #03b5e2;
+ --background-color: #212529;
+ --background-project-card-color: #1f2225;
+}
+
 /* =========================
    Global layout & reset
 ========================= */
@@ -6,24 +14,32 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
+  font-family:
+    "Noto Sans Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace, system-ui, sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: system-ui, sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
-  background: radial-gradient(
+  color: var(--primary-color);
+  background: var(--background-color);
+  /* background: radial-gradient(
     ellipse at center,
     rgba(255, 254, 234, 1) 0%,
     rgba(255, 254, 234, 1) 35%,
     #b7e8eb 100%
-  );
+  ); */
 }
 .hide {
   visibility: hidden;
 }
+/* =========================
+   Fonts
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 /* =========================
    Header
 ========================= */
@@ -41,12 +57,12 @@ body {
 }
 
 a {
-  color: #425c83;
+  color: var(--primary-a-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #00a0c6;
+  color: var(--primary-a-color-hover);
 }
 
 /* =========================
@@ -79,6 +95,13 @@ main {
 }
 .para {
   margin-top: 1rem;
+}
+.ascii-art {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 7px;
+  line-height: 1;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 /* Fancy highlighted word */
@@ -134,11 +157,11 @@ main {
 
 /* Card */
 .project-card {
-  background: rgba(255, 255, 255, 0.7);
+  /* background: var(--background-project-card-color); */
   border-radius: 12px;
   padding: 1.5rem;
   text-align: left;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -151,8 +174,8 @@ main {
 
 .project-card p {
   margin-bottom: 1.2rem;
-  font-size: 0.95rem;
-  color: #444;
+  font-size: 0.8rem;
+
 }
 
 /* Hover effect */
@@ -163,12 +186,13 @@ main {
 
 /* Link */
 .project-link {
-  font-weight: 600;
-  color: #425c83;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--primary-a-color);
 }
 
 .project-link:hover {
-  color: #00a0c6;
+  color: var(--primary-a-color-hover);
 }
 
 /* =========================
@@ -200,17 +224,17 @@ main {
   color: #00a0c6;
 }
 
-/* Ocean container */
+/* Ocean container
 .ocean {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 /* Waves */
-.wave {
+/* .wave {
   position: absolute;
   bottom: -20px;
   width: 6400px;
@@ -224,7 +248,7 @@ main {
   animation:
     wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
     swell 7s ease -1.25s infinite;
-}
+} */
 
 /* =========================
    Animations
